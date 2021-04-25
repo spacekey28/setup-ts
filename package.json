@@ -4,6 +4,14 @@
   "main": "index.js",
   "author": "Peter Son",
   "license": "MIT",
+  "scripts": {
+    "cli": "ts-node src/cli.ts",
+    "test": "jest",
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist build",
+    "ts-node": "ts-node"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.22",
     "@types/node": "^14.14.41",
